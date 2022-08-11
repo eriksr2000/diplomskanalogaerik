@@ -245,22 +245,22 @@ body.dark-theme {
 }
 
 .tooltip2 .tooltiptext2 {
-    visibility: hidden;
-    width: 80px;
-    font-size: 12px;
-    font-weight: 600;
-    top: -5px;
-    background-color: var(--text-color-lighten);
-    color: var(--first-color);
-    text-align: center;
-    position: absolute;
-    border-radius: 4px;
-    margin-left: 820px;
-    margin-top: 45px;
+  visibility: hidden;
+  width: 80px;
+  font-size: 12px;
+  font-weight: 600;
+  top: -5px;
+  background-color: var(--text-color-lighten);
+  color: var(--first-color);
+  text-align: center;
+  position: absolute;
+  border-radius: 4px;
+  margin-left: 820px;
+  margin-top: 45px;
 }
 
 .tooltip2:hover .tooltiptext2 {
-    visibility: visible;
+  visibility: visible;
 }
 
 .tooltip .tooltiptext {
@@ -278,6 +278,22 @@ body.dark-theme {
 }
 
 .tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip3 .tooltiptext3 {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  width: 220px;
+  height: 220px;
+  bottom: 100%;
+  margin-left: -100px;
+  position: absolute;
+  padding-left: -40px;
+}
+
+.tooltip3:hover .tooltiptext3 {
   visibility: visible;
 }
 
