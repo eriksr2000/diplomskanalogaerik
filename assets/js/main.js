@@ -27,6 +27,7 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.profile__border`)
+sr.reveal(`.tooltip2`, {delay: 400})
 sr.reveal(`.profile__name`, {delay: 400})
 sr.reveal(`.profile__profession`, {delay: 500})
 sr.reveal(`.profile__social`, {delay: 600})
@@ -34,6 +35,7 @@ sr.reveal(`.profile__info-group`, {interval: 100, delay: 600})
 sr.reveal(`.profile__buttons`, {delay: 700})
 sr.reveal(`.filters__content`, {delay: 700})
 sr.reveal(`.filters`, {delay: 800})
+sr.reveal(`.notes`, {delay: 1000})
 
 
 /*=============== DARK LIGHT THEME ===============*/
@@ -65,33 +67,3 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-
-// const findMyState = () => {
-//     const status = document.querySelector('.status');
-
-//     const success = (position) => {
-//         console.log(position)
-//         const latitude = position.coords.latitude;
-//         const longitude = position.coords.longitude;
-//         // console.log(latitude + ' ' + longitude)
-
-//         const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`
-    
-//         fetch(geoApiUrl)
-//         .then(res => res.json())
-//         .then(data => {
-//             console.log(data)
-//             status.textContent = data.countryName
-//             // status.textContent = data.continentCode
-//         })
-    
-//     }
-
-//     const error = () => {
-//         status.textContent = 'Unable to retrive your location';
-//     }
-
-//     navigator.geolocation.getCurrentPosition(success, error);
-// }
-
-// document.querySelector('.find-state').addEventListener('click', findMyState);

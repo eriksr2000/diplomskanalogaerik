@@ -1,0 +1,71 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+	--body-color: hsl(0, 0%, 96%);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	background-color: var(--body-color);
+}
+
+.kanban {
+	display: flex;
+	padding: 30px;
+	width: 968px;
+	background:#416a59;
+	border-radius: 10px;
+}
+
+.kanban * {
+	font-family: "Poppins", sans-serif;
+}
+
+.kanban__column {
+	flex: 1;
+}
+
+.kanban__column:not(:last-child) {
+	margin-right: 30px;
+}
+
+.kanban__column-title {
+	margin-bottom: 20px;
+	font-size: 30px;
+	color: white;
+	user-select: none;
+	font-weight: 600;
+}
+
+.kanban__item-input {
+	padding: 10px 15px;
+	box-sizing: border-box;
+	background: white;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.kanban__dropzone {
+	height: 10px;
+	transition: background 0.15s, height 0.15s;
+}
+
+.kanban__dropzone--active {
+	height: 20px;
+	background: rgba(0, 0, 0, 0.25);
+}
+
+.kanban__add-item {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	background: rgba(0, 0, 0, 0.1);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	font-weight: 600;
+}

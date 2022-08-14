@@ -31,7 +31,9 @@
 }
 
 /*=============== BASE ===============*/
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -43,6 +45,8 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: 0.3s;
+  margin: 0;
+  position: relative;
 }
 
 h1,
@@ -98,7 +102,7 @@ body.dark-theme {
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 100%);
   --text-color-light: hsl(0, 0%, 1%);
-  --text-color-lighten: hsl(200, 8%, 1%);
+  --text-color-lighten: hsl(0, 0%, 1%);
   --body-color: hsl(0, 0%, 6%);
   --container-color: #fff;
 }
@@ -256,7 +260,7 @@ body.dark-theme {
   position: absolute;
   border-radius: 4px;
   margin-left: 820px;
-  margin-top: 45px;
+  margin-top: 15px;
 }
 
 .tooltip2:hover .tooltiptext2 {
@@ -433,7 +437,8 @@ body.dark-theme {
 
 /*=============== FOOTER ===============*/
 .footer__copy {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: 2.5rem 0 2rem;
   text-align: center;
   font-size: var(--smaller-font-size);
@@ -514,7 +519,7 @@ body.dark-theme {
   }
 
   .change-theme {
-    top: 2.5rem;
+    top: 0.5rem;
     right: 2.5rem;
   }
 
