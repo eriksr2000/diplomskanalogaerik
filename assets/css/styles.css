@@ -567,3 +567,12 @@ body.dark-theme {
     margin: 4.5rem 0 2.5rem;
   }
 }
+
+.clock {
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+  font-weight: 600;
+  font-size: var(--smaller-font-size);
+  color: var(--first-color);
+}
