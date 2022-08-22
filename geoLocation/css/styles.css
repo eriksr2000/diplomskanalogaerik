@@ -1,0 +1,62 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --first-color: hsl(0, 0%, 1%);
+    --body-color: hsl(0, 0%, 96%);
+  
+    /*========== Font and typography ==========*/
+    --body-font: "Poppins", sans-serif;
+  }
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    transition: 0.3s;
+    margin: 0;
+  }
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.find-state {
+  background-color: var(--first-color);
+  color: var(--body-color);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.find-state:hover {
+  background-color: darkgrey;
+}
+
+.ip {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.find-ip {
+  background-color: var(--first-color);
+  color: var(--body-color);
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.find-ip:hover {
+  background-color: darkgrey;
+}
+
+h1 {
+  font-size: 25px;
+  padding: 10px;
+}
+
