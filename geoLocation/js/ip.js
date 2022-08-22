@@ -10,8 +10,4 @@ const findMyIP = () => {
     });
 };
 
-const error = () => {
-  statuss.textContent = "Unable to get your IP";
-};
-
 document.querySelector(".find-ip").addEventListener("click", findMyIP);
